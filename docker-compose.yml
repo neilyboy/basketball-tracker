@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  basketball-tracker:
+    build: .
+    container_name: basketball-tracker
+    ports:
+      - "8075:3000"
+    environment:
+      - ADMIN_PASSWORD=basketball
+      - NODE_ENV=production
+    volumes:
+      - ./data:/app/data
+      - ./uploads:/app/backend/public/uploads
+    restart: unless-stopped
