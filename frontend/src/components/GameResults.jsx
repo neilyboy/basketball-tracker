@@ -73,7 +73,7 @@ function GameResults({ events, settings }) {
                       }`}>
                         {game.isHome ? 'HOME' : 'AWAY'}
                       </span>
-                      {game.isNonConference && (
+                      {!!game.isNonConference && (
                         <span className="text-[10px] px-2 py-0.5 rounded font-black uppercase tracking-wider bg-amber-500/20 text-amber-400">
                           FRIENDLY
                         </span>

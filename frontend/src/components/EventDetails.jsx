@@ -69,7 +69,7 @@ function EventDetails({ event, settings }) {
             `}>
               {event.isHome ? '🏠 Home Game' : '✈️ Away Game'}
             </span>
-            {event.isNonConference && (
+            {!!event.isNonConference && (
               <span className="px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wider shadow-lg bg-gradient-to-r from-amber-500 to-orange-500 text-white">
                 🤝 Friendly Game
               </span>
