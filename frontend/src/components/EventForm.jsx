@@ -301,8 +301,8 @@ function EventForm({ event, settings, onSubmit, onCancel }) {
                   </label>
                   <input
                     type="number"
-                    name={formData.isHome === 'true' ? "score7thHome" : "score7thAway"}
-                    value={formData.isHome === 'true' ? formData.score7thHome : formData.score7thAway}
+                    name={formData.isHome ? "score7thHome" : "score7thAway"}
+                    value={formData.isHome ? formData.score7thHome : formData.score7thAway}
                     onChange={handleChange}
                     placeholder="Our score"
                     className="w-full px-4 py-2 bg-dark-bg border border-dark-border rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -315,8 +315,8 @@ function EventForm({ event, settings, onSubmit, onCancel }) {
                   </label>
                   <input
                     type="number"
-                    name={formData.isHome === 'true' ? "score7thAway" : "score7thHome"}
-                    value={formData.isHome === 'true' ? formData.score7thAway : formData.score7thHome}
+                    name={formData.isHome ? "score7thAway" : "score7thHome"}
+                    value={formData.isHome ? formData.score7thAway : formData.score7thHome}
                     onChange={handleChange}
                     placeholder="Opponent score"
                     className="w-full px-4 py-2 bg-dark-bg border border-dark-border rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -338,8 +338,8 @@ function EventForm({ event, settings, onSubmit, onCancel }) {
                   </label>
                   <input
                     type="number"
-                    name={formData.isHome === 'true' ? "score8thHome" : "score8thAway"}
-                    value={formData.isHome === 'true' ? formData.score8thHome : formData.score8thAway}
+                    name={formData.isHome ? "score8thHome" : "score8thAway"}
+                    value={formData.isHome ? formData.score8thHome : formData.score8thAway}
                     onChange={handleChange}
                     placeholder="Our score"
                     className="w-full px-4 py-2 bg-dark-bg border border-dark-border rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -352,8 +352,8 @@ function EventForm({ event, settings, onSubmit, onCancel }) {
                   </label>
                   <input
                     type="number"
-                    name={formData.isHome === 'true' ? "score8thAway" : "score8thHome"}
-                    value={formData.isHome === 'true' ? formData.score8thAway : formData.score8thHome}
+                    name={formData.isHome ? "score8thAway" : "score8thHome"}
+                    value={formData.isHome ? formData.score8thAway : formData.score8thHome}
                     onChange={handleChange}
                     placeholder="Opponent score"
                     className="w-full px-4 py-2 bg-dark-bg border border-dark-border rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
